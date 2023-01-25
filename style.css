@@ -4,3 +4,6 @@ h1 {
 #change-role-country {
   cursor: pointer;
 }
+.partner-list {
+  grid-template-columns: 25% 25% 25% 25%;
+}
