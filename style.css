@@ -4,6 +4,9 @@ h1 {
 #change-role-country {
   cursor: pointer;
 }
+.navbar-main .navbar-nav {
+  font-size: 1.0875rem;
+}
 .partner-list {
   grid-template-columns: 33.33% 33.33% 33.33%;
 }
