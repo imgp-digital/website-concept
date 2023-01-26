@@ -17,6 +17,9 @@ h1 {
   object-fit: contain;
   height: 2.25rem;
 }
-.partner-list > li > a:hover { 
+.partner-list > li > a { 
   bakground-color: #f9f9f9;
+}
+.partner-list > li > a:hover { 
+  bakground-color: #f0f0f0;
 }
