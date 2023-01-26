@@ -18,10 +18,10 @@ h1 {
   height: 2.25rem;
 }
 .partner-list > li > a { 
-  background-color: #f9f9f9;
+  background-color: #fcfcfc;
 }
 .partner-list > li > a:hover { 
-  background-color: #f0f0f0;
+  background-color: #f9f9f9;
 }
 .partner-list > li > a:hover > h2 { 
   text-decoration: underline;
