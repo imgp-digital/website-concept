@@ -17,9 +17,6 @@ h1, h2 {
   object-fit: contain;
   height: 2.25rem;
 }
-.partner-list > li > a { 
-  background-color: #fcfcfc;
-}
 .partner-list > li > a:hover { 
   background-color: #f9f9f9;
 }
