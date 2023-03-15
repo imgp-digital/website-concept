@@ -24,6 +24,7 @@ body.individual #overlay.show-individual {
 }
 main {
   position: relative;
+  border: 1px solid transparent;
 }
 .bg-003b4a {
     background: #003b4a;
