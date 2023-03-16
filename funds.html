@@ -29,9 +29,13 @@
 			
 		<main>
 			
-			<section class="filters">
-				<div class="container">
-					<div class="row border p-3">
+			<section class="filters py-5">
+				<div class="container border p-0">
+					<div class="p-3 border-bottom d-flex">
+						<h2 class="fs-5 mb-0 flex-grow-1"><i class="bi bi-filter me-1"></i>Filters</h2>
+						<a href="#"><i class="bi bi-arrow-counterclockwise me-1 text-black"></i>Reset filters</a>
+					</div>
+					<div class="row p-3 pb-2">
 						<div class="col-3 mb-3">
 							<label for="fundFilter" class="form-label">Filter</label>
 							<input type="email" class="form-control" id="fundFilter" placeholder="Fund name, ISIN or SEDOL" aria-describedby="emailHelp">			
@@ -291,6 +295,44 @@
 					</div>
 				</div>
 			</section>
+			
+			<section class="results border-bottom">
+				<div class="container p-0">
+					<table class="table table-bordered">
+						<thead class="bg-light">
+							<tr>
+								<th scope="col" class="align-top text-muted">Share Class</th>
+								<th scope="col" class="align-top text-muted">ISIN</th>
+								<th scope="col" class="align-top text-muted">NAV<span class="d-block small fw-normal">as of 15 Mar 2023</span></th>
+								<th scope="col" class="align-top text-muted">Fund Size (millions)<span class="d-block small fw-normal">as of 15 Mar 2023</span></th>
+								<th scope="col" class="align-top text-muted">Inception date</th>
+								<th scope="col" class="align-top text-muted">Factsheet</th>
+								<th scope="col" class="align-top text-muted">KIID</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">iMGP US Value C CHF HP</th>
+								<td>LU0821216768</td>
+								<td>CHF 212.82</td>
+								<td>USD 128.8</td>
+								<td>17 Oct 2012</td>
+								<td><a class="d-block" href="#"><i class="bi bi-filetype-pdf"></i></a></td>
+								<td><a class="d-block" href="#"><i class="bi bi-filetype-pdf"></i></a></td>
+							</tr>
+							<tr>
+								<th scope="row">iMGP US Value C EUR</th>
+								<td>	LU2078907586</td>
+								<td>EUR 169.74</td>
+								<td>USD 128.8</td>
+								<td>11 Dec 2019</td>
+								<td><a class="d-block" href="#"><i class="bi bi-filetype-pdf"></i></a></td>
+								<td><a class="d-block" href="#"><i class="bi bi-filetype-pdf"></i></a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>	
 			
 			
 		</main>
