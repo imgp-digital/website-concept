@@ -10,6 +10,9 @@ body.institutional .hide-institutional {
 #overlay {
   display: none;
 }
+.dropdown-menu {
+  z-index: 1050;
+}
 body.individual #overlay.show-individual {
   display: block;
   position: absolute;
