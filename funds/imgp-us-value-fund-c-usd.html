@@ -39,7 +39,7 @@
 				<div class="container py-5">
 					<div class="d-flex">
 						<div class="flex-grow-1">
-							<h1>iMGP US Value fund C USD</h1>
+							<h1>iMGP US Value fund</h1>
 							<p class="lead text-muted mb-0">A quality approach to value investing</p>			
 						</div>
 						<div>
@@ -54,7 +54,25 @@
 				</div>
 			</section>
 			
-			<section class="intro border-bottom">
+			<nav class="navbar navbar-expand-lg bg-light border-bottom sticky-top">
+				<div class="container">
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#about">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#performance">Performance</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#keyFacts">Key Facts</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+			<section id="about" class="border-bottom">
 				<div class="container py-5">
 					<div class="row gx-5">
 						<div class="col-3">
@@ -89,19 +107,20 @@
 				</div>
 			</section>
 			
-			<section class="performance">
+			<section id="performance" class="border-bottom">
 				<div class="container py-5">
 					<h2 class="fs-4 mb-4">Performance</h2>
-					
-					<div>
-						<div class="d-flex align-items-start">
-							<nav class="nav flex-column nav-pills col-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+					<div class="row">
+						<div class="col-3">
+							<nav class="nav flex-column nav-pills me-5" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 								<a class="nav-link active p-2 d-block" id="v-pills-cumulative-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cumulative" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Cumulative</a>
 								<a class="nav-link p-2 d-block" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Annualised</a>
 								<a class="nav-link p-2 d-block" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Calendar Year</a>
 								<a class="nav-link p-2 d-block" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Growth of Investment</a>
 							</nav>
-							<div class="tab-content border-start ps-5 flex-grow-1" id="v-pills-tabContent">
+						</div>
+						<div class="col-9">							
+							<div class="tab-content" id="v-pills-tabContent">
 								<div class="tab-pane fade show active" id="v-pills-cumulative" role="tabpanel" aria-labelledby="v-pills-cumulative-tab" tabindex="0">
 									<div class="table-responsive">
 										<table class="table table-bordered">
@@ -224,62 +243,62 @@
 					</div>
 				</div>
 			</section>
-			
-			<section class="key-facts border-bottom">
+					
+			<section id="keyFacts" class="border-bottom">
 				<div class="container py-5">
 					<div class="row gx-5">
 						<div class="col-3">
-							<h2 class="fs-4">Key Facts</h2>
+							<h2 class="fs-4 mb-5">Key Facts</h2>
 						</div>
 						<div class="col-9">
 							<div class="row gx-5">
-								<div class="col-4 mb-4">
+								<div class="col-3 mb-5">
 									<span class="small text-muted d-block mb-2">Asset Class</span>	
 									<p class="fs-5 mb-0">Equities</p>
 								</div>
-								<div class="col-4 mb-4">
+								<div class="col-3 mb-5">
 									<span class="small text-muted d-block mb-2">Benchmark Index</span>	
 									<p class="fs-5 mb-0">MSCI USA Value Net</p>
 								</div>
-								<div class="col-4 mb-4">
+								<div class="col-3 mb-5">
 									<span class="small text-muted d-block mb-2">SFDR Classification</span>	
 									<p class="fs-5 mb-0">Article 8</p>
 								</div>
-								<div class="col-4 mb-4">
+								<div class="col-3 mb-5">
 									<span class="small text-muted d-block mb-2">Fund Launch Date</span>	
 									<p class="fs-5 mb-0">1 Mar 2012</p>
 								</div>
-								<div class="col-4 mb-4">
+								<div class="col-3 mb-5">
 									<span class="small text-muted d-block mb-2">Share Class Launch Date</span>	
 									<p class="fs-5 mb-0">1 Mar 2016</p>
 								</div>
-								<div class="col-4 mb-4">
+								<div class="col-3 mb-5">
 									<span class="small text-muted d-block mb-2">Fund Assets</span>	
 									<p class="fs-5 mb-0">USD 136,247,133</p>
 									<footer class="small">
 										<span class="mt-2 small d-block text-muted">as of 31 Mar 2023</span>
 									</footer>
 								</div>
-								<div class="col-4 mb-4">
+								<div class="col-3 mb-5">
 									<span class="small text-muted d-block mb-2">Share Class Assets</span>	
 									<p class="fs-5 mb-0">USD 7,988,145</p>
 									<footer class="small">
 										<span class="mt-2 small d-block text-muted">as of 31 Mar 2023</span>
 									</footer>
 								</div>
-								<div class="col-4 mb-4">
+								<div class="col-3 mb-5">
 									<span class="small text-muted d-block mb-2">Fund Base Currency</span>	
 									<p class="fs-5 mb-0">USD</p>
 								</div>
-								<div class="col-4 mb-4">
+								<div class="col-3 mb-5">
 									<span class="small text-muted d-block mb-2">Share Class Currency</span>	
 									<p class="fs-5 mb-0">USD</p>
 								</div>									
-								<div class="col-4 mb-4">
+								<div class="col-3 mb-5">
 									<span class="small text-muted d-block mb-2">ISIN</span>	
 									<p class="fs-5 mb-0">LU0821216339</p>
 								</div>
-								<div class="col-4 mb-4">
+								<div class="col-3 mb-5">
 									<span class="small text-muted d-block mb-2">Dividend Policy</span>	
 									<p class="fs-5 mb-0">Accumulating</p>
 								</div>
