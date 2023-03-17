@@ -37,7 +37,7 @@
 			
       <section class="hero">
 				<div class="container p-5 border-start border-end bg-light">
-					<div class="d-flex">
+					<div class="d-flex py-2">
 						<div class="flex-grow-1">
 							<h1>iMGP US Value fund</h1>
 							<p class="lead text-muted mb-0">A quality approach to value investing</p>			
@@ -123,37 +123,90 @@
 						<div class="col-9 px-5">							
 							<div class="tab-content" id="v-pills-tabContent">
 								<div class="tab-pane fade show active" id="v-pills-cumulative" role="tabpanel" aria-labelledby="v-pills-cumulative-tab" tabindex="0">
+									
+									<div>
+										<canvas id="myChart" class="mb-4" style="position: relative; height: 25vh; width: 50vw;"></canvas>
+									</div>
+
+									<script>
+										const ctx = document.getElementById('myChart');
+										
+										Chart.defaults.font.size = 14;
+										Chart.defaults.font.family = 'system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"'; 
+										
+										new Chart(ctx, {
+											type: 'bar',
+											data: {
+												labels: ['1 Month', '6 Months', '1 Year', '3 Years', '5 Years', 'Inception'],
+												datasets: [
+													{
+														label: 'iMGP US Value fund C USD',
+														data: [-2.6,  0.7, -6.1, 22.6, 23.2, 83.3],
+														borderWidth: 0,
+														backgroundColor: '#666666',
+													},
+													{
+														label: 'MSCI USA Value Net',
+														data: [-3.5, 3.4, -3.2, 46.8, 51.2, 157.6],
+														borderWidth: 0,
+														backgroundColor: '#cccccc',
+													},
+												]
+											},
+											options: {
+												scales: {
+													y: {
+														beginAtZero: true,
+														grid: {
+															display: false
+														}
+													},
+													x: {
+													grid: {
+															display: false
+														}
+													}
+												},
+												plugins: {
+													legend: {
+														display: false
+													}
+												}
+											}
+										});
+									</script>
+									
 									<div class="table-responsive">
 										<table class="table table-bordered">
 											<thead>
 												<tr>
 													<th scope="col" class="align-top"></th>
 													<th scope="col" class="align-top text-end">1 Month</th>
+													<th scope="col" class="align-top text-end">6 Months</th>
 													<th scope="col" class="align-top text-end">1 Year</th>
-													<th scope="col" class="align-top text-end">3 Years</th>
-													<th scope="col" class="align-top text-end">5 Years</th>		
-													<th scope="col" class="align-top text-end">10 Years</th>													
+													<th scope="col" class="align-top text-end">3 Years</th>		
+													<th scope="col" class="align-top text-end">5 Years</th>													
 													<th scope="col" class="align-top text-end">Inception</th>
 												</tr>
 											</thead>
 											<tbody>
 												<tr class="fund bg-light">
-													<th scope="row">iMGP US Value fund C USD</th>
-													<td class="text-end">-2.3%</td>
-													<td class="text-end">18.4%</td>
-													<td class="text-end">10.1%</td>
-													<td class="text-end">6.7%</td>
-													<td class="text-end">6.4%</td>
-													<td class="text-end">6.4%</td>
+													<th scope="row"><i class="bi bi-square-fill me-2" style="color: #666666;"></i>iMGP US Value fund C USD</th>
+													<td class="text-end">-2.6%</td>
+													<td class="text-end">0.7%</td>
+													<td class="text-end">-6.1%</td>
+													<td class="text-end">22.6%</td>
+													<td class="text-end">23.2%</td>
+													<td class="text-end">83.3%</td>
 												</tr>
 												<tr>
-													<th scope="row">MSCI USA Value Net</th>
-													<td class="text-end">-0.8%</td>													
-													<td class="text-end">16.7%</td>
-													<td class="text-end">9.0%</td>
-													<td class="text-end">4.7%</td>
-													<td class="text-end">3.3%</td>
-													<td class="text-end">5.4%</td>
+													<th scope="row"><i class="bi bi-square-fill me-2" style="color: #cccccc;"></i>MSCI USA Value Net</th>
+													<td class="text-end">-3.5%</td>													
+													<td class="text-end">3.4%</td>
+													<td class="text-end">-3.2%</td>
+													<td class="text-end">46.8%</td>
+													<td class="text-end">51.2%</td>
+													<td class="text-end">157.6%</td>
 												</tr>														
 											</tbody>
 										</table>
@@ -240,6 +293,22 @@
 									<p>Growth of investment</p>
 								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section id="portfolio">
+				<div class="container border-start border-end border-bottom p-5">
+					<div class="row gx-5">
+						<h2 class="fs-4 mb-4">Portfolio</h2>
+					</div>
+					<div class="row gx-5">
+						<div class="col-3">
+
+						</div>
+						<div class="col-9 px-5">							
+							
 						</div>
 					</div>
 				</div>
